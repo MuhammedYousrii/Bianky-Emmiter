@@ -1,0 +1,40 @@
+{
+  "name": "Event-Emmiter",
+  "version": "1.0.1",
+  "description": "Bianko Event-Emmiter Is Minial Js Lib For Creating Your Custom Event",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test && mocha test/**/*.mocha.js",
+    "fire-test" : "npm --exec \" npm run test \" " ,
+    "start": "webpack-dev-server --config webpack.config.js",
+    "prod": "cross-env NODE_ENV=production PLATFORM=web webpack"
+  },
+  "author": "Crafted-Developers",
+  "license": "ISC",
+  "keywords": [
+    "crafted",
+    "internet",
+    "craft",
+    "care"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "lodash": "^4.17.4",
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "cross-env": "^5.0.3",
+    "expect.js": "^0.3.1",
+    "file-loader": "^0.11.2",
+    "mocha": "^4.0.1",
+    "resolve-url-loader": "^2.1.0",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.3.0",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.6.1"
+  }
+}
